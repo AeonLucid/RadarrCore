@@ -1,7 +1,6 @@
 version: 2
 jobs:
     build:
-        working_directory: /temp
         docker:
             - image: microsoft/dotnet:sdk
         environment:
@@ -9,6 +8,5 @@ jobs:
             DOTNET_CLI_TELEMETRY_OPTOUT: 1
         steps:
             - checkout
-            - run: cd src/
             - run: dotnet restore
             - run: dotnet build
