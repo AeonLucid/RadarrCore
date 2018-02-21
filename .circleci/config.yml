@@ -10,3 +10,21 @@ jobs:
             - checkout
             - run: dotnet restore src/
             - run: dotnet build src/
+    test:
+        docker:
+            - image: microsoft/dotnet:sdk
+        environment:
+            DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
+            DOTNET_CLI_TELEMETRY_OPTOUT: 1
+        steps:
+            - checkout
+            - run: dotnet restore src/
+            - run: dotnet build src/
+            - run: dotnet test src/Radarr.Runtime.Windows.Test/
+            - run: dotnet test src/Radarr.Common.Test/
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
