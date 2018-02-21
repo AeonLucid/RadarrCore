@@ -1,8 +1,7 @@
 ﻿using Radarr.Common.EnvironmentInfo;
 using Radarr.Common.Instrumentation;
-using Radarr.Host;
 
-namespace Radarr.Console
+namespace Radarr.Host.Console
 {
     public class Program
     {

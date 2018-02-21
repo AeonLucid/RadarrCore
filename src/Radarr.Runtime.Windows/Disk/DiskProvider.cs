@@ -41,9 +41,10 @@ namespace Radarr.Windows.Disk
         {
             Ensure.That(filename, () => filename).IsValidPath();
 
-            var fileSecurity = new FileSecurity(filename, AccessControlSections.All);
+            var fileInfo = new FileInfo(filename);
+            var fileSecurity = new FileSecurity(filename, AccessControlSections.None);
             fileSecurity.SetAccessRuleProtection(false, false);
-            // TODO: Does this get applied?
+            fileInfo.SetAccessControl(fileSecurity);
         }
 
         public override void SetPermissions(string path, string mask, string user, string group)

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="nunit" Version="3.9.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="System.Security.Principal.Windows" Version="4.5.0-preview1-25914-04" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Radarr.Common.Test\Radarr.Common.Test.csproj" />
+    <ProjectReference Include="..\Radarr.Common\Radarr.Common.csproj" />
+    <ProjectReference Include="..\Radarr.Runtime.Windows\Radarr.Runtime.Windows.csproj" />
+    <ProjectReference Include="..\Radarr.Test.Common\Radarr.Test.Common.csproj" />
+  </ItemGroup>
+
+</Project>
