@@ -15,9 +15,9 @@ before_build:
 build_script:
     - dotnet build "src\RadarrCore.sln" -c Release
 
-test:
-    assemblies:
-        - '**\*.Test.dll'
+#test:
+#    assemblies:
+#        - '**\*.Test.dll'
   
 pull_requests:
     do_not_increment_build_number: true
