@@ -8,6 +8,5 @@ jobs:
             DOTNET_CLI_TELEMETRY_OPTOUT: 1
         steps:
             - checkout
-            - run: cd src/
-            - run: dotnet restore
-            - run: dotnet build
+            - run: dotnet restore src/
+            - run: dotnet build src/
