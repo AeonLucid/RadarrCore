@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Runtime", "Runtime", "{EF15
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Radarr.Runtime.Windows", "Radarr.Runtime.Windows\Radarr.Runtime.Windows.csproj", "{8713A065-24FB-4564-888E-6E39360DE900}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radarr.Database.Log", "Radarr.Database.Log\Radarr.Database.Log.csproj", "{DA33AC15-CAE9-4B0A-BBC6-1908688EED93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Radarr.Database.Logs", "Radarr.Database.Logs\Radarr.Database.Logs.csproj", "{1A199458-EDFE-4CFA-8626-CD2740DE66FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +47,10 @@ Global
 		{8713A065-24FB-4564-888E-6E39360DE900}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8713A065-24FB-4564-888E-6E39360DE900}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8713A065-24FB-4564-888E-6E39360DE900}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DA33AC15-CAE9-4B0A-BBC6-1908688EED93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DA33AC15-CAE9-4B0A-BBC6-1908688EED93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DA33AC15-CAE9-4B0A-BBC6-1908688EED93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DA33AC15-CAE9-4B0A-BBC6-1908688EED93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A199458-EDFE-4CFA-8626-CD2740DE66FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A199458-EDFE-4CFA-8626-CD2740DE66FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A199458-EDFE-4CFA-8626-CD2740DE66FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A199458-EDFE-4CFA-8626-CD2740DE66FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,7 +60,7 @@ Global
 		{BB3FE920-4917-4D3D-8838-B6B9A978DFDF} = {96DB7C7E-7CCB-4F06-BC74-B9C586008F49}
 		{B8525986-19F6-4E86-A563-7737A69BC062} = {C37F401B-4BE2-4278-AFB5-8F6665F90674}
 		{8713A065-24FB-4564-888E-6E39360DE900} = {EF1592C9-DBCB-4A1C-8CB3-2D21ACF460C0}
-		{DA33AC15-CAE9-4B0A-BBC6-1908688EED93} = {96DB7C7E-7CCB-4F06-BC74-B9C586008F49}
+		{1A199458-EDFE-4CFA-8626-CD2740DE66FA} = {96DB7C7E-7CCB-4F06-BC74-B9C586008F49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DBC1628-FE03-4392-92AC-42CB603F016A}

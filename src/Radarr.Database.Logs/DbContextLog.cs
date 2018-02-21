@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Radarr.Database.Log
+namespace Radarr.Database.Logs
 {
     public class DbContextLog : DbContext
     {
