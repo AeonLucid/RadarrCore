@@ -2,6 +2,9 @@ version: '1.0.0.{build}'
 
 configuration: Release
 
+assembly_info:
+    patch: false
+
 environment:
     DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
     DOTNET_CLI_TELEMETRY_OPTOUT: 1
@@ -14,7 +17,7 @@ build_script:
 
 test:
     assemblies:
-        - 'src\**\*.Test.dll'
+        - '**\*.Test.dll'
 
 cache:
     - '%USERPROFILE%\.nuget\packages'
