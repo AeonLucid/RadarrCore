@@ -1,6 +1,6 @@
 version: 2
 jobs:
-    build:
+    build_and_test:
         docker:
             - image: microsoft/dotnet:sdk
         environment:
@@ -10,3 +10,5 @@ jobs:
             - checkout
             - run: dotnet restore src/
             - run: dotnet build src/
+            - run: dotnet test src/Radarr.Runtime.Windows.Test/
+            - run: dotnet test src/Radarr.Common.Test/
