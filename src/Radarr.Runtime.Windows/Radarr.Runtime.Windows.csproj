@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Radarr.Runtime.Windows</AssemblyName>
+    <RootNamespace>Radarr.Runtime.Windows</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.FileSystem.AccessControl" Version="4.5.0-preview1-25914-04" />
+    <PackageReference Include="System.Security.AccessControl" Version="4.5.0-preview1-25914-04" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Radarr.Common\Radarr.Common.csproj" />
+  </ItemGroup>
+
+</Project>
