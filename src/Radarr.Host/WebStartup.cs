@@ -7,9 +7,10 @@ using Microsoft.Extensions.Logging;
 
 namespace Radarr.Host
 {
-    public class BootstrapStartup
+    public class WebStartup
+
     {
-        public BootstrapStartup(IHostingEnvironment env, ILoggerFactory logger)
+        public WebStartup(IHostingEnvironment env, ILoggerFactory logger)
         {
 
         }

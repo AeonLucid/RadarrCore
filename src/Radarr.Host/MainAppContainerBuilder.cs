@@ -19,7 +19,7 @@ namespace Radarr.Host
             {
                 "Radarr.Host",
                 "Radarr.Common",
-//                "NzbDrone.Core",
+                "Radarr.Core",
 //                "NzbDrone.Api",
 //                "NzbDrone.SignalR"
             };

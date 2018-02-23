@@ -1,6 +1,6 @@
-﻿using Radarr.Common.Messaging;
+using Radarr.Common.Messaging;
 
-namespace Radarr.Core.Messaging.Events
+namespace Radarr.Core.Messaging.Events.Interfaces
 {
     public interface IEventAggregator
     {

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Radarr.Common\Radarr.Common.csproj" />
+    <ProjectReference Include="..\Radarr.Core\Radarr.Core.csproj" />
     <ProjectReference Include="..\Radarr.Runtime.Windows\Radarr.Runtime.Windows.csproj" />
   </ItemGroup>
 

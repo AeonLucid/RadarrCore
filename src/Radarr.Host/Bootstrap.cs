@@ -9,6 +9,7 @@ using Radarr.Common.EnvironmentInfo;
 using Radarr.Common.EnvironmentInfo.Interfaces;
 using Radarr.Common.Instrumentation;
 using Radarr.Common.Processes.Interfaces;
+using Radarr.Core.Instrumentation;
 
 namespace Radarr.Host
 {
@@ -61,12 +62,14 @@ namespace Radarr.Host
 
         private void StartApp()
         {
+            _container.Resolve<ReconfigureLogging>().Reconfigure();
+
             // tmp
             _container.Resolve<IRuntimeInfo>().IsRunning = true;
 
             var webhost = new WebHostBuilder()
                 .UseKestrel(x => x.AddServerHeader = false)
-                .UseStartup<BootstrapStartup>()
+                .UseStartup<WebStartup>()
                 .ConfigureLogging(builder =>
                 {
                     builder.ClearProviders();

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Reflection;
 using Autofac;
 using NLog;
+using Radarr.Common.Composition.Extensions;
 using Radarr.Common.EnvironmentInfo.Interfaces;
-using Radarr.Common.Instrumentation;
 using Radarr.Common.Messaging;
 using Radarr.Host.Autofac;
 
@@ -31,6 +31,9 @@ namespace Radarr.Common.Composition
             }
 
             AutoRegisterInterfaces();
+
+            _containerBuilder.RegisterInstance(new ContainerMetadata(_loadedTypes)).SingleInstance();
+            _containerBuilder.RegisterSelf();
 
             Container = _containerBuilder.Build();
         }
@@ -71,11 +74,13 @@ namespace Radarr.Common.Composition
                     return;
                 case 1:
                     _containerBuilder.RegisterType(implementations.Single())
+                        .AsSelf()
                         .AsImplementedInterfaces()
                         .SingleInstance();
                     break;
                 default:
                     _containerBuilder.RegisterTypes(implementations.ToArray())
+                        .AsSelf()
                         .AsImplementedInterfaces()
                         .SingleInstance();
                     break;

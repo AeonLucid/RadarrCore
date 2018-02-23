@@ -10,7 +10,7 @@ using Radarr.Common.Cache.Interfaces;
 using Radarr.Common.EnvironmentInfo;
 using Radarr.Common.EnvironmentInfo.Interfaces;
 using Radarr.Common.Messaging;
-using Radarr.Core.Messaging.Events;
+using Radarr.Core.Messaging.Events.Interfaces;
 using Radarr.Test.Common.AutoMoq;
 
 namespace Radarr.Test.Common

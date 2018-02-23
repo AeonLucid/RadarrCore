@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Radarr.Core.Datastore.Main.Models;
 
-namespace Radarr.Database.Main
+namespace Radarr.Core.Datastore.Main
 {
     public class DbContextMain : DbContext
     {
@@ -13,5 +14,7 @@ namespace Radarr.Database.Main
         {
 
         }
+
+        public DbSet<CommandModel> Commands { get; set; }
     }
 }
