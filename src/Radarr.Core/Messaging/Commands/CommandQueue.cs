@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using Radarr.Core.Datastore.Main.Models;
+using Radarr.Core.Datastore.Databases.Main.Models;
 
 namespace Radarr.Core.Messaging.Commands
 {

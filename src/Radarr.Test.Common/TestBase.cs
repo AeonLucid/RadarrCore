@@ -86,7 +86,7 @@ namespace Radarr.Test.Common
         [SetUp]
         public void TestBaseSetup()
         {
-            GetType().IsPublic.Should().BeTrue("All Test fixtures should be public to work in mono.");
+            GetType().IsPublic.Should().BeTrue("All Test fixtures should be public.");
 
             LogManager.ReconfigExistingLoggers();
 
@@ -132,7 +132,7 @@ namespace Radarr.Test.Common
         {
             if (!OsInfoCore.IsLinux && !OsInfoCore.IsOSX)
             {
-                throw new IgnoreException("windows specific test");
+                throw new IgnoreException("unix specific test");
             }
         }
 

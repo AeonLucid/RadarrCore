@@ -8,8 +8,8 @@ using Radarr.Common.Cache.Interfaces;
 using Radarr.Common.EnsureThat;
 using Radarr.Common.Interfaces;
 using Radarr.Common.Serializer;
-using Radarr.Core.Datastore.Main.Models;
-using Radarr.Core.Datastore.Main.Repositories.Interfaces;
+using Radarr.Core.Datastore.Databases.Main.Models;
+using Radarr.Core.Datastore.Databases.Main.Repositories.Interfaces;
 using Radarr.Core.Lifecycle.Events;
 using Radarr.Core.Messaging.Commands.Interfaces;
 using Radarr.Core.Messaging.Events.Interfaces;
@@ -49,7 +49,7 @@ namespace Radarr.Core.Messaging.Commands
             _logger.Trace("Checking if command is queued or started: {0}", command.Name);
 
             var existingCommands = QueuedOrStarted(command.Name);
-            var existing = existingCommands.SingleOrDefault(c => CommandEqualityComparer.Instance.Equals(c.Body, command));
+            var existing = existingCommands.SingleOrDefault(c => CommandEqualityComparer.Instance.Equals(c.BodyObj, command));
 
             if (existing != null)
             {
@@ -61,7 +61,7 @@ namespace Radarr.Core.Messaging.Commands
             var commandModel = new CommandModel
             {
                 Name = command.Name,
-                Body = command,
+                BodyObj = command,
                 QueuedAt = DateTime.UtcNow,
                 Trigger = trigger,
                 Priority = priority,

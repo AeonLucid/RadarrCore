@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Radarr.Core.Datastore.Base;
-using Radarr.Core.Datastore.Main.Models;
+using Radarr.Core.Datastore.Databases.Main.Models;
 
-namespace Radarr.Core.Datastore.Main.Repositories.Interfaces
+namespace Radarr.Core.Datastore.Databases.Main.Repositories.Interfaces
 {
     public interface ICommandRepository : IBasicRepository<CommandModel>
     {

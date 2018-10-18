@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading;
-using Radarr.Core.Datastore.Main.Models;
+using Radarr.Core.Datastore.Databases.Main.Models;
 
 namespace Radarr.Core.Messaging.Commands.Interfaces
 {

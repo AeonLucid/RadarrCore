@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using NLog;
 using Radarr.Common.Interfaces;
-using Radarr.Core.Datastore.Main.Models;
+using Radarr.Core.Datastore.Databases.Main.Models;
 using Radarr.Core.Lifecycle.Events;
 using Radarr.Core.Messaging.Commands.Events;
 using Radarr.Core.Messaging.Commands.Exceptions;
@@ -116,7 +116,7 @@ namespace Radarr.Core.Messaging.Commands
         
         private void BroadcastCommandUpdate(CommandModel command)
         {
-            if (command.Body.SendUpdatesToClient)
+            if (command.BodyObj.SendUpdatesToClient)
             {
                 _eventAggregator.PublishEvent(new CommandUpdatedEvent(command));
             }

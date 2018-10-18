@@ -1,5 +1,5 @@
 ﻿using System;
-using Radarr.Core.Datastore.Main.Models;
+using Radarr.Core.Datastore.Databases.Main.Models;
 
 namespace Radarr.Core.ProgressMessaging
 {

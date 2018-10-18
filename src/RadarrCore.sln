@@ -27,6 +27,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Radarr.Common.Test", "Radar
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test.Shared", "Test.Shared", "{BA86788D-9CF7-4703-9953-46315E351981}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Radarr.Core.Test", "Radarr.Core.Test\Radarr.Core.Test.csproj", "{A557ACAB-B043-4DEF-ADA2-5283134ED9DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{029D6E76-DF2C-4EAA-B866-E706F48FBA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{029D6E76-DF2C-4EAA-B866-E706F48FBA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{029D6E76-DF2C-4EAA-B866-E706F48FBA42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A557ACAB-B043-4DEF-ADA2-5283134ED9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A557ACAB-B043-4DEF-ADA2-5283134ED9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A557ACAB-B043-4DEF-ADA2-5283134ED9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A557ACAB-B043-4DEF-ADA2-5283134ED9DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,6 +82,7 @@ Global
 		{268613EB-6264-458E-80B3-7AF3D2D3F38E} = {76466289-C0C0-4079-97BF-7573C9E77D3F}
 		{C006DB2E-401C-4167-B41C-DE091F3BCFEE} = {BA86788D-9CF7-4703-9953-46315E351981}
 		{029D6E76-DF2C-4EAA-B866-E706F48FBA42} = {76466289-C0C0-4079-97BF-7573C9E77D3F}
+		{A557ACAB-B043-4DEF-ADA2-5283134ED9DF} = {76466289-C0C0-4079-97BF-7573C9E77D3F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DBC1628-FE03-4392-92AC-42CB603F016A}

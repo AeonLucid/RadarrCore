@@ -5,12 +5,12 @@ using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using Radarr.Core.Datastore.Base;
-using Radarr.Core.Datastore.Main.Models;
-using Radarr.Core.Datastore.Main.Repositories.Interfaces;
+using Radarr.Core.Datastore.Databases.Main.Models;
+using Radarr.Core.Datastore.Databases.Main.Repositories.Interfaces;
 using Radarr.Core.Messaging.Commands;
 using Radarr.Core.Messaging.Events.Interfaces;
 
-namespace Radarr.Core.Datastore.Main.Repositories
+namespace Radarr.Core.Datastore.Databases.Main.Repositories
 {
     public class CommandRepository : BasicRepository<CommandModel>, ICommandRepository
     {
